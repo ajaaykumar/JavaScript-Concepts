@@ -40,6 +40,9 @@ let num2 = 45
 
 // Increnetals
 
+// postfix (x++, x--)
+// If used postfix, with operator after operand (for example, x++), 
+// the increment operator increments and returns the value before incrementing.
 let x = 3
 let y = x++
 //let Z = 3++ //Invalid left-hand side expression in postfix operation
@@ -47,15 +50,14 @@ let y = x++
 console.log(`x: ${x}`);
 console.log(`y: ${y}`);
 
-// prefix
-// ++x
-// --x
-// postfix
-// x ++
-// x --
 
-
-
+// prefix (++x, --x)
+// If used prefix, with operator before operand (for example, ++x), 
+// the increment operator increments and returns the value after incrementing. 
+let a = 9
+let b = ++a
+console.log(`a: ${a}`);
+console.log(`b: ${b}`);
 
 
 
