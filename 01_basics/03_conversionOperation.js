@@ -24,8 +24,43 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someValue = 33
 let stringConverson = String(someValue)
-console.log(typeof stringConverson);
-console.log(stringConverson);
+// console.log(typeof stringConverson);
+// console.log(stringConverson);
+
+// ****************OPERATERS******************
+let num1 = 33
+let num2 = 45
+
+// console.log(num1+num2)
+// console.log(num1-num2)
+// console.log(num1*num2)
+// console.log(num1**num2)
+// console.log(num1/num2)
+// console.log(num1%num2)
+
+// Increnetals
+
+let x = 3
+let y = x++
+//let Z = 3++ //Invalid left-hand side expression in postfix operation
+// let Z = ++3  Invalid left-hand side expression in prefix operation
+console.log(`x: ${x}`);
+console.log(`y: ${y}`);
+
+// prefix
+// ++x
+// --x
+// postfix
+// x ++
+// x --
+
+
+
+
+
+
+
+
 
 
 
