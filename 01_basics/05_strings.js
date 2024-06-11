@@ -118,9 +118,43 @@ console.log(`toLowerCase: ${sentence.toLowerCase()}`);
 console.log(`toUpperCase: ${sentence.toUpperCase()}`);
 
 // includes() method
+/* The includes() method checks if a specified string, passed as an 
+argument, is present inside another string. 
+The search is case-sensitive and the return value is a boolean. */
+let sentencel = 'Always look on the bright side of life'
+console.log(sentencel.includes('look up'))
+console.log(sentencel.includes('look on'))
+console.log(sentencel.indexOf('bright'))
+console.log(sentencel.includes('bright',19))
 
 
+// slice() & substring() methods
+/*
+The slice() and substring() methods pull a portion of a string, 
+returning it as a new string. 
+They do not change the content of the original string.
+*/
+
+let sentences = 'Always look on the bright side of life';
+console.log(sentences.slice(7));
+console.log(sentences.substring(7));
+console.log(sentences.slice(0,6));
+console.log(sentences.substring(0,6));
+/*
+These two methods are almost identical, except for a few differences. One of them is that if the first index passed to substring() is greater than the second index, the two arguments are exchanged so that a string is still returned. In the same scenario, the slice() method returns an empty string instead:
+*/
+
+console.log(sentences.substring(11,7)); // 'look'
+console.log(sentences.slice(11,7)); // ''
 
 
+// split() method
+/* 
+The split() method takes a separator argument and breaks a string up, according to the occurrence of the separator character inside the string. Then, it returns an array of strings.
+*/
 
+let sente = 'Always look on the bright side of life';
+console.log(sente.split(' '));
+console.log(sente.split(' '));
+console.log(sente.split(' ', 6));
 
