@@ -67,6 +67,58 @@ let b = 'all cats are grey.'
 let c = a + ' ' + b
 console.log(c);
 
+// You can do a similar thing with the use of the addition assignment operator +=:
+console.log('assignment operator: ');
+console.log(a += ' ');
+console.log(a += b);
+
+// If you try to concatenate a number to a string, that number will be coerced to a string value. For example:
+console.log('The '+ 3 + ' Musketeers');
+
+// String comparison
+// You can compare strings based on their alphabetical order and length using arithmetic comparison operators. The return value is a boolean.
+console.log('String comparison: ');
+console.log('Berry' < 'Copper'); // true
+// because 'B' comes before 'C'
+
+console.log('Berry' < 'Bingo'); // true
+// because the first characters are the same and 'e' comes before 'i'
+
+console.log('berry' < 'Copper'); // false
+// because the comparison is case-sensitive and capital letters come first
+
+/* The comparison is performed letter by letter, starting from the first one. 
+And it is actually based on the Unicode order. 
+
+For the same reason, '$' < '&' evaluates true – $ comes before & in the Unicode table.
+*/
+
+
+let quote = 'All generalizations are dangerous, even this one';
+let quoteMark = 'All generalizations are dangerous, even this one!'
+console.log(`quoteMark:  ${quote < quoteMark}`); //  quote lacks the final exclamation mark, so quoteMark is greater
+console.log(`length ${quote.length < quoteMark.length}`);
+
+// But template literals provide a feature called string interpolation, that simplifies the readability and makes the code more fluid.
+// In short, you assemble the string by substituting the content of placeholders, ${}
+
+const dog1 = 'Bach'
+const dog2 = 'Bingo'
+console.log(`My Two dogs are called ${dog1} and ${dog2}`);
+
+// concat() method
+let con1 = 'When candles are out,'
+let con2 = 'all cats are grey.'
+let con3 = con1.concat(' ',con2)
+console.log(con3);
+
+// toLowerCase() & toUpperCase() methods
+let sentence1 = 'Always look on the bright side of life'
+console.log(`toLowerCase: ${sentence.toLowerCase()}`);
+console.log(`toUpperCase: ${sentence.toUpperCase()}`);
+
+// includes() method
+
 
 
 
