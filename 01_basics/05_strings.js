@@ -141,7 +141,8 @@ console.log(sentences.substring(7));
 console.log(sentences.slice(0,6));
 console.log(sentences.substring(0,6));
 /*
-These two methods are almost identical, except for a few differences. One of them is that if the first index passed to substring() is greater than the second index, the two arguments are exchanged so that a string is still returned. In the same scenario, the slice() method returns an empty string instead:
+These two methods are almost identical, except for a few differences. One of them is that if the first index passed to substring() is greater than the second index, 
+the two arguments are exchanged so that a string is still returned. In the same scenario, the slice() method returns an empty string instead:
 */
 
 console.log(sentences.substring(11,7)); // 'look'
@@ -150,7 +151,8 @@ console.log(sentences.slice(11,7)); // ''
 
 // split() method
 /* 
-The split() method takes a separator argument and breaks a string up, according to the occurrence of the separator character inside the string. Then, it returns an array of strings.
+The split() method takes a separator argument and breaks a string up, according to the occurrence of the separator character inside the string. 
+Then, it returns an array of strings.
 */
 
 let sente = 'Always look on the bright side of life';
