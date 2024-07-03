@@ -54,5 +54,26 @@ console.log(regularUser.hasOwnProperty('email'));
 
 
 
+// Another way to exteact data from objects
+const course = {
+    courseName:"javaScript for beginners",
+    coursePrice: 999
+}
+
+// 1 usual way to get the data from objects
+console.log(`1 way: ${course.courseName}`);
+
+// 2 another way destructuring
+const {courseName} = course
+console.log(`2 way: ${courseName}`);
+
+// you can also add alise
+const {courseName: Name} = course
+console.log(`alise name: ${Name}`);
 
 
+// JSON
+{
+    "name":"Ajay",
+    "age":"28"
+}
